@@ -6,5 +6,5 @@ export default function handler(
 ) {
   const map = req.query.map;
 
-  res.redirect(`osu://dl/${map}`);
+  res.redirect(`osu://s/${map}`);
 }
