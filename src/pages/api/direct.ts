@@ -5,6 +5,9 @@ export default function handler(
   res: NextApiResponse<any>
 ) {
   const map = req.query.map;
+  const set = req.query.set;
+
+  if (set) return res.redirect(`osu://s/${set}`);
 
   res.redirect(`osu://s/${map}`);
 }
