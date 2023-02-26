@@ -7,7 +7,7 @@ export default function handler(
   const map = req.query.map;
   const set = req.query.set;
 
-  if (set) return res.redirect(`osu://s/${set}`);
+  if (set) return res.redirect(`osu://dl/${set}`);
 
-  res.redirect(`osu://s/${map}`);
+  res.redirect(`osu://b/${map}`);
 }
